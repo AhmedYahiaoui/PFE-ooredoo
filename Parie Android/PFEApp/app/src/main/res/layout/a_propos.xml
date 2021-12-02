@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+            <LinearLayout
+                android:background="@drawable/a"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:id="@+id/linearLayout2"
+                android:orientation="vertical"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+            </LinearLayout>
+
+            <TextView
+                android:text="Le Fix Jdid"
+                android:layout_width="207dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView"
+                android:textStyle="italic"
+                android:textSize="40dp"
+                android:fontFamily="cursive"
+                android:textColor="#9ed7cc"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_gravity="center"
+                android:layout_marginBottom="33dp"
+                />
+
+            <TextView
+        android:text="  C’est une nouvelle solution Fixe (Fixed Wireless Broadband Access) qui vous offre de l'internet Illimité sans fil avec débit garantie.vous aurez Ooredoo
+comme un seul vis-à-vis.
+Concernant l’équipement, 2 types de Box sont disponibles Indoor et Outdoor.
+
+Bénéficiez de 12 mois de connexion Internet non-stop avec :
+Un prix mensuel défiant toute
+concurrence à 35DT/mois.
+Une connexion Internet illimitée.
+
+Un débit en download garanti de 4 Mbps.
+
+Un service de téléphonie fixe.
+Un interlocuteur une facture unique.
+" android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textStyle="normal"
+        android:textSize="20dp"
+android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#80818b"
+        android:layout_above="@+id/text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="23dp"
+        android:layout_gravity="center"/>
+
+
+
+            <TextView
+                android:text="Notre Application"
+                android:layout_width="257dp"
+                android:layout_height="match_parent"
+                android:id="@+id/textView1"
+                android:textStyle="italic"
+                android:textSize="40dp"
+                android:fontFamily="cursive"
+                android:textColor="#9ed7cc"
+                android:layout_marginTop="8dp"
+                android:layout_below="@+id/linearLayout2"
+                android:layout_gravity="center"
+                android:layout_weight="0.03"
+                android:layout_marginBottom="33dp"
+                />
+
+            <TextView
+                android:text="
+Le probléme dans le fix qu'il n'est pas
+éligible dans toute la pays.il marche dans quelques provinces Donc le temps cette application à crée pour vous aidez a connaitre est ce que votre zone éligible ou non
+A partir quelque etapes "
+                android:layout_width="290dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textStyle="normal"
+                android:textSize="20dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#80818b"
+                android:layout_above="@+id/text"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="43dp"
+                android:layout_gravity="center"/>
+
+
+
+
+            <TextView
+                android:text="developper par Yahiaoui Ahmed , Kaabechi Sondes "
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/text"
+                android:textStyle="normal"
+                android:textSize="10dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#af4f4c"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true" />
+
+
+
+        </LinearLayout>
+
+</ScrollView>
+</RelativeLayout>
+
+
+

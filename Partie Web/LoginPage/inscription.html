@@ -1,0 +1,176 @@
+<! doctype html>
+<head> 
+      <title> Inscription </title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+      <link rel="stylesheet" href="dist/css/formValidation.css"/>
+      <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+      <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="dist/js/formValidation.js"></script>
+      <script type="text/javascript" src="dist/js/framework/bootstrap.js"></script>
+</head>
+
+<body background="img/ins.jpg">
+
+
+ <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+		  <li> <a href="http://localhost/ooredoo/index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"> </span>  Accueil</a> </li>
+            <li class="active"> <a href="inscription.html"> <span class="glyphicon glyphicon-plus" aria-hidden="true"> </span>  Inscription</a> </li>
+            <li> <a href="list.php"> <span class="glyphicon glyphicon-user" aria-hidden="true"> </span>   Liste des Zones éligibles</a> </li>
+          </ul>       
+        </div>
+      </nav>
+
+
+
+
+<div class="container">
+
+   <div class="row">
+        <section>
+		  <div class="col-lg-8 col-lg-offset-2">
+                   	   
+			   <form name="f" id="f" method="POST" class="form-horizontal" action="inscription.php">
+			   			   <div class="form-group">
+                            <label class="col-lg-2 control-label">Le nom du zone</label>
+                            <div class="col-lg-4">
+                            <input type="text" class=" form-control" name="nom" placeholder="nom"  />
+                            </div>
+               </div>
+			   
+			   <div class="form-group">
+                            <label class="col-lg-2 control-label">l'altitude</label>
+                            <div class="col-lg-4">
+                            <input type="text" class=" form-control" name="altitude" placeholder="l'altitude"  />
+                            </div>
+               </div>
+			   
+
+			   <div class="form-group">
+                          <label class="col-lg-2 control-label">longitude</label>
+                            <div class="col-lg-4">
+                            <input type="text" class="form-control" name="longitude" placeholder="longitude"  />
+                            </div>
+               </div>
+			            
+						
+									   <div class="form-group">
+                          <label class="col-lg-2 control-label">Le premier Radius : Indoor </label>
+                            <div class="col-lg-4">
+                            <input type="text" class="form-control" name="radius1" placeholder="radius1"  />
+                            </div>
+               </div>
+						
+						
+														   <div class="form-group">
+                          <label class="col-lg-2 control-label">le deuxième Radius : Outdoor </label>
+                            <div class="col-lg-4">
+                            <input type="text" class="form-control" name="radius2" placeholder="radius2"  />
+                            </div>
+               </div>	
+						
+						
+			   <div class="form-group">
+                            <div class="col-lg-2 col-lg-offset-2">
+							
+                              <button type="submit" class="btn btn-success" name="b1" value="Enregistrer">
+                              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>   Enregistrer
+                              </button>
+							  </div>
+							   <div class="col-lg-3">
+                               <a href="inscription.html"> <button class="btn btn-danger " name="b2" value="Annuler">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>  Annuler 
+								</button> </a>
+                            </div>
+                </div>
+				
+				
+				
+			   </form>
+		  </div>
+        </section>
+   </div>
+</div>
+  <footer style="position: absolute;bottom: 0;">
+        <div class="container text-center">
+            <p>Copyright &copy; 2017</p>
+        </div>
+    </footer>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#f').formValidation({
+        message: 'This value is not valid',
+       
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+		
+		nom: {
+                validators: {
+                    notEmpty: {
+                        message: 'La Nom est obligatoire et ne peut être vide'
+                    },
+					regexp: {
+                       regexp: /^[A-Z\s]+$/i,
+                        message: 'La Nom ne peut pas contenir des caractères numerique et des espaces'
+                    }
+                }
+            },
+		
+		
+           radius1: {
+                validators: {
+                    notEmpty: {                      
+						message: 'le radius est obligatoire et ne peut être vide'
+                    },					
+					regexp: {
+                        regexp:/^[0-9\s]+$/i,
+
+                        message: 'Le  radius ne peut pas contenir des caractères alphabétiques et des espaces'
+                    }
+				
+                }
+            },
+            radius2: {
+                validators: {
+                    notEmpty: {
+                        message: 'Le radius est obligatoire et ne peut être vide'
+                    },
+					regexp: {
+                       regexp: /^[0-9\s]+$/i,
+                        message: 'Le radius ne peut pas contenir des caractères alphabétiques et des espaces'
+                    }
+                }
+            },
+			
+			           altitude: {
+                validators: {
+                    notEmpty: {                      
+						message: 'l altitude est obligatoire et ne peut être vide'
+                    },					
+				
+                }
+            },
+            longitude: {
+                validators: {
+                    notEmpty: {
+                        message: 'La longitude est obligatoire et ne peut être vide'
+                    },
+					
+                }
+            },
+  
+        }
+    });
+});
+function myFunction() {
+    location.reload();
+	}
+</script>
+</body>
+</html>

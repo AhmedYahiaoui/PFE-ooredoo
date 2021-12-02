@@ -1,0 +1,253 @@
+<! doctype html>
+<head> 
+      <title> Inscription </title>
+      <meta charset="UTF-8">
+      <link rel="stylesheet" href="vendor/bootstrap/css/bootstrap.css"/>
+      <link rel="stylesheet" href="dist/css/formValidation.css"/>
+      <script type="text/javascript" src="vendor/jquery/jquery.min.js"></script>
+      <script type="text/javascript" src="vendor/bootstrap/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="dist/js/formValidation.js"></script>
+      <script type="text/javascript" src="dist/js/framework/bootstrap.js"></script>
+</head>
+
+<body background="img/ins.jpg">
+
+
+ <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li> <a href="index.html"> <span class="glyphicon glyphicon-home" aria-hidden="true"> </span>  Accueil</a> </li>
+            <li class="active"> <a href="ajoute_emp.php"> <span class="glyphicon glyphicon-plus" aria-hidden="true"> </span>  Inscription</a> </li>        
+          </ul>       
+        </div>
+      </nav>
+
+
+
+
+<div class="container">
+
+   <div class="row">
+        <section>
+		  <div class="col-lg-8 col-lg-offset-2">
+                   	   
+			   <form name="f" id="f" method="POST" class="form-horizontal" action="ajoute_emp.php">
+			   <div class="form-group">
+                            <label class="col-lg-2 control-label">Nom</label>
+                            <div class="col-lg-4">
+                            <input type="text" class=" form-control" name="nom" placeholder="Votre Nom"  />
+                            </div>
+               </div>
+			   
+
+			   <div class="form-group">
+                          <label class="col-lg-2 control-label">Prénom</label>
+                            <div class="col-lg-4">
+                            <input type="text" class="form-control" name="prenom" placeholder="Votre Prénom"  />
+                            </div>
+               </div>
+			            
+						
+						
+						<div class="form-group">
+                            <label class="col-lg-2 control-label">Sexe</label>
+                               <div class="col-lg-4">
+                                    <div class="radio">
+                                    <label> <input type="radio" name="sexe" value="homme" /> Homme </label>
+                                    </div>
+                                    <div class="radio">
+                                    <label> <input type="radio" name="sexe" value="femme" /> Femme </label>
+                                    </div>
+                              </div>
+                        </div>
+						<div class="form-group">
+                            <label class="col-lg-2 control-label">  Statut </label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="statut" placeholder="Votre statut" />
+                            </div>
+                        </div>
+						<div class="form-group">
+                            <label class="col-lg-2 control-label">  Catre d'identiter </label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="cin" placeholder="Votre Catre d'identiter" />
+                            </div>
+                        </div>
+						
+						<div class="form-group">
+                            <label class="col-lg-2 control-label">  Email </label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="mail" placeholder="Votre adresse mail" />
+                            </div>
+                        </div>
+						
+						<div class="form-group">
+                            <label class="col-lg-2 control-label">Numero du telephone</label>
+                            <div class="col-lg-4">
+                                <input type="text" class="form-control" name="num_tele" placeholder="Votre Numero du telephone" />
+                            </div>				
+                        </div>
+			   
+			   <div class="form-group">
+                            <label class="col-lg-2 control-label">Mot du passe</label>
+                            <div class="col-lg-4">
+                                <input type="password" class="form-control" name="pwd" placeholder="Votre Mot du passe" />
+                            </div>				
+                        </div>
+			   
+			   <div class="form-group">
+                            <div class="col-lg-2 col-lg-offset-2">
+							
+                              <button type="submit" class="btn btn-success" name="b1" value="Enregistrer">
+                              <span class="glyphicon glyphicon-ok" aria-hidden="true"></span>   Enregistrer
+                              </button>
+							  </div>
+							   <div class="col-lg-3">
+                               <a href="index.html"> <button type="button" class="btn btn-danger " name="b2" value="Annuler">
+                                <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>  Annuler 
+								</button> </a>
+                            </div>
+                </div>
+				
+				
+				
+			   </form>
+		  </div>
+        </section>
+   </div>
+</div>
+  <footer style="position: absolute;bottom: 0;">
+        <div class="container text-center">
+            <p>Copyright &copy; 2017</p>
+        </div>
+    </footer>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('#f').formValidation({
+        message: 'This value is not valid',
+       
+        icon: {
+            valid: 'glyphicon glyphicon-ok',
+            invalid: 'glyphicon glyphicon-remove',
+            validating: 'glyphicon glyphicon-refresh'
+        },
+        fields: {
+           nom: {
+                validators: {
+                    notEmpty: {                      
+						message: 'Le nom est obligatoire et ne peut être vide'
+                    },					
+					regexp: {
+                        regexp: /^[A-Z\s]+$/i,
+                        message: 'Le  nom ne peut pas contenir des caractères alphabétiques et des espaces'
+                    }
+				
+                }
+            },
+            prenom: {
+                validators: {
+                    notEmpty: {
+                        message: 'Le prénom est obligatoire et ne peut être vide'
+                    },
+					regexp: {
+                        regexp: /^[A-Z\s]+$/i,
+                        message: 'Le  prénom ne peut pas contenir des caractères alphabétiques et des espaces'
+                    }
+                }
+            },
+			
+			 sexe: {
+                validators: {
+                    notEmpty: {
+                        message: 'Le sexe est obligatoire'
+                    }
+                }
+            },
+			
+			statut: {
+                validators: {
+                    notEmpty: {
+                        message: 'Le statut est obligatoire et ne peut être vide'
+                    },
+					regexp: {
+                        regexp: /^[A-Z\s]+$/i,
+                        message: 'Le statut ne peut pas contenir que des caractères alphabétiques et des espaces'
+                    }
+                }
+            },
+			
+			cin: {
+                validators: {
+                    notEmpty: {
+                        message: 'La CIN est obligatoire et ne peut être vide'
+                    },
+					regexp: {
+                        regexp: /^[0-9\s]+$/i,
+                        message: 'La CIN ne peut pas contenir  des caractères alphabétiques et des espaces'
+                    },
+					stringLength: {
+                        min: 8,
+                        max: 8,
+                        message: 'La numero du Catre d"identiter doit contenir 8 caractères'
+                    }
+                }
+            },
+			
+			
+			
+           mail: {
+                validators: {
+                    
+					notEmpty: {
+                        message: 'L adresse email est non valide '
+                    },
+					
+					regexp: {
+					          regexp: '^[^@\\s]+@([^@\\s]+\\.)+[^@\\s]+$',
+                              message: 'L adresse email est non valide'
+                    }
+					
+			
+                }
+            },
+            num_tele: {
+                validators: {
+                    notEmpty: {
+                        message: 'Le numero de telephone est obligatoire et ne peut être vide'
+                    },
+                    regexp: {
+                        regexp: /^[0-9\s]+$/i,
+                        message: 'Le numero de telephone ne peut pas contenir  des caractères alphabétiques et des espaces'
+                    },
+					stringLength: {
+                        min: 8,
+                        max: 8,
+                        message: 'Le numero de telephone doit contenir 8 chiffre'
+                    }
+				
+                }
+            },
+			
+		   pwd: {
+                validators: {
+                    notEmpty: {
+                        message: 'Le numero de telephone est obligatoire et ne peut être vide'
+                    },
+					stringLength: {
+                        min: 6,
+                        max: 250,
+                        message: 'Le numero de telephone doit contenir 6 chiffres ou lettres au minimum '
+                    }
+				
+                }
+            }
+		   
+		   
+        }
+    });
+});
+function myFunction() {
+    location.reload();
+	}
+</script>
+</body>
+</html>

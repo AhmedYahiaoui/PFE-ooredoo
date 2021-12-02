@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/floating_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="16dp"
+    android:paddingLeft="64dp"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.ahmed.pfeapp.for_frag_aide"
+   >
+
+    <android.support.design.widget.FloatingActionButton
+
+
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="280dp"
+        android:src="@drawable/voice"
+        android:elevation="10dp"
+        android:id="@+id/fab_call"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/fab6_color"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="230dp"
+        android:src="@drawable/instagram"
+        android:elevation="10dp"
+        android:id="@+id/fab_insta"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/fab5_color"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="180dp"
+        android:src="@drawable/twitter"
+        android:elevation="10dp"
+        android:id="@+id/fab_twitte"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/fab4_color"
+        android:visibility="invisible"
+        />
+
+
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="130dp"
+        android:src="@drawable/facebook"
+        android:elevation="10dp"
+        android:id="@+id/fab_fb"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/fab3_color"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="80dp"
+        android:src="@drawable/chrome"
+        android:elevation="10dp"
+        android:id="@+id/fab_nav"
+        app:pressedTranslationZ="12dp"
+        app:backgroundTint="@color/fab3_color"
+        android:visibility="invisible"
+        />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/icon_settings"
+        android:elevation="6dp"
+        android:id="@+id/fab_plus"
+        app:pressedTranslationZ="12dp"
+
+        />
+
+</android.support.design.widget.CoordinatorLayout>

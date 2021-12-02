@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ahmed.pfeapp.frag_aide"
+    android:background="#FFFFFF"
+    >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="1">
+
+
+            <LinearLayout
+                android:background="@drawable/aa"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:layout_marginBottom="30dp"
+                >
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:weightSum="1"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <WebView
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:id="@+id/web1"
+                        android:background="@null"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="La page Ma compte, vous pouvez ici consulter votre solde Point Merci,envoyer d'argent, avec des multiples forfaits internet et Mobile"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView2"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="30dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/fab7_color"
+                />
+
+            <LinearLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:weightSum="1"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <WebView
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:id="@+id/web2"
+                        android:background="@null"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="La page A propos , vous donne une idée sur l'application et Le Fix jdid"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView1"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/fab7_color"
+                android:layout_marginBottom="30dp" />
+
+            <LinearLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="400dp"
+                    android:weightSum="1"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <WebView
+                        android:layout_width="match_parent"
+                        android:layout_height="400dp"
+                        android:id="@+id/web3"
+                        android:background="@null"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="La page Map ,vous pouvez ici vérifier l'éligibilité du votre zone ,il suffit du faire un clic sur la button jaune puis un autre sur la button bleu et attend la notification "
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/fab7_color"
+                android:layout_marginBottom="30dp"
+                />
+
+            <LinearLayout
+                android:background="#fff"
+                android:layout_width="match_parent"
+                android:layout_height="420dp"
+                android:weightSum="1"
+                android:layout_marginBottom="10dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="420dp"
+                    android:weightSum="1"
+                    android:layout_gravity="center"
+                    >
+
+
+                    <WebView
+                        android:layout_width="match_parent"
+                        android:layout_height="420dp"
+                        android:id="@+id/web4"
+                        android:background="@null"
+                        android:layout_gravity="center"/>
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:text="La page Ma Boutique ,vous pouvez ici voir toutes les boutiques du ooredoo dans la tunisie"
+                android:layout_width="306dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView4"
+                android:textSize="15dp"
+                android:layout_gravity="center"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="@color/fab7_color"
+                android:layout_marginBottom="90dp" />
+
+
+
+
+            <Button
+                android:text="contactez nous via réseau"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:id="@+id/button1"
+                android:onClick="onClick"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+

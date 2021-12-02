@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Fixjdid</string>
+    <string name="title_activity_first_fragment">Map</string>
+    <string name="title_activity_ma_boutique">Map</string>
+
+
+    <string name="str_btn_find">Find</string>
+    <string name="hnt_et_location">Enter location</string>
+</resources>

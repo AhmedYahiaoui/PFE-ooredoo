@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.ahmed.pfeapp.profile"
+    android:background="#FFFFFF">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:background="@drawable/aa"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:layout_marginBottom="30dp"
+                >
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:background="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1"
+                android:layout_marginBottom="0dp"
+                >
+
+
+                <LinearLayout
+                    android:layout_width="207dp"
+                    android:layout_height="193dp"
+                    android:orientation="vertical"
+                    >
+
+                    <ImageButton
+                        android:layout_width="182dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/smart"
+                        android:id="@+id/b"
+                        android:layout_marginLeft="0dp"
+                        android:background="#FFFFFF" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="196dp"
+                        android:src="@drawable/send"
+                        android:id="@+id/c"
+                        android:background="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <TextView
+                android:text="       Conculter votre solde"
+                android:textColor="@color/fab7_color"
+                android:layout_width="185dp"
+                android:layout_height="30dp"
+                android:id="@+id/tv4"
+                android:layout_weight="0.14"
+                android:layout_gravity="left"/>
+            <TextView
+                android:text="           Envoyer d'argent"
+                android:textColor="@color/fab7_color"
+                android:layout_width="110dp"
+                android:layout_height="30dp"
+                android:id="@+id/tv5"
+                android:layout_weight="1"
+                android:layout_gravity="right"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true">
+                <LinearLayout
+                    android:layout_width="202dp"
+                    android:layout_height="180dp"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:layout_width="185dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/wif"
+                        android:id="@+id/d"
+                        android:onClick="onClick"
+                        android:background="#FFFFFF" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:layout_width="183dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/custome"
+                        android:id="@+id/e"
+                        android:onClick="onClick"
+                        android:background="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="        Les Forfaits internet"
+                    android:textColor="@color/fab7_color"
+                    android:layout_width="185dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tv1"
+                    android:layout_weight="0.14"
+                    android:layout_gravity="left"/>
+                <TextView
+                    android:text="        Les Forfaits Mobile "
+                    android:textColor="@color/fab7_color"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tv2"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true">
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="180dp">
+
+                    <ImageButton
+                        android:layout_width="183dp"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/heart"
+                        android:id="@+id/merci"
+                        android:onClick="onClick"
+                        android:background="#FFFFFF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="180dp"
+                    android:layout_height="180dp"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/mobil"
+                        android:id="@+id/sos"
+                        android:onClick="onClick"
+                        android:background="#FFFFFF"/>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="           Les points Merci"
+                    android:textColor="@color/fab7_color"
+                    android:layout_width="185dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tv6"
+                    android:layout_weight="0.14"
+                    android:layout_gravity="left"/>
+                <TextView
+                    android:text="           Service Otlebni "
+                    android:textColor="@color/fab7_color"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tv7"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="bottom"
+                android:layout_below="@+id/linearLayout"
+                android:layout_centerHorizontal="true">
+
+                <LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="180dp">
+
+                    <ImageButton
+                        android:layout_width="180dp"
+                        android:layout_height="180dp"
+                        android:src="@drawable/clubpng"
+                        android:id="@+id/ca"
+                        android:onClick="onClick"
+                        android:background="#FFFFFF"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="184dp"
+                    android:layout_height="180dp"
+                    android:weightSum="1">
+
+                    <ImageButton
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"
+                        android:src="@drawable/ess"
+                        android:id="@+id/etoile"
+                        android:onClick="onClick"
+                        android:background="#FFFFFF" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <TextView
+                    android:text="                  CA Mobile"
+                    android:textColor="@color/fab7_color"
+                    android:layout_width="185dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tv8"
+                    android:layout_weight="0.14"
+                    android:layout_gravity="left"/>
+                <TextView
+                    android:text="                ESS Mobile"
+                    android:textColor="@color/fab7_color"
+                    android:layout_width="110dp"
+                    android:layout_height="30dp"
+                    android:id="@+id/tv9"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
